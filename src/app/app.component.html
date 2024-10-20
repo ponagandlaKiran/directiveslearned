@@ -1,0 +1,109 @@
+<!-- <div class=".justify-content-sm-center">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination" >
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+
+      <ng-container *ngFor = "let crd of cards ; let i = index" >
+        <li class="page-item"  [ngClass]="{active : i === currentPage}"  
+        (click)="getCurrentPage(i)" 
+        *ngIf="paginationIndex(i)"
+        >
+        <a class="page-link" href="#">
+        {{i+1}}
+        </a>
+        </li>
+      </ng-container>
+      <li class="page-item" (click)="gotonextpage(currentPage)"><a class="page-link" href="#">Next</a></li>
+
+    </ul>
+  </nav>
+  <h1 class="appClass">kkkk</h1>
+</div>
+<div class="card" style="width: 18rem;" >
+  <img class="card-img-top" src="{{cards[currentPage].photo}}" alt="Card image cap">
+  <div class="card-body">
+    <h3 >kiarn</h3>
+    <h5 class="card-title" appClass>{{cards[currentPage].id}}</h5>
+    <p class="card-text">{{cards[currentPage].name}}.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a> 
+  </div>
+  
+</div>
+ <p appHighlight [backgroundcolor]="'red'" >Highlight me!</p> 
+
+<p  [appHighlight]="'red'" >Highlight me!</p>
+
+
+
+<h1 *ngIf="show;then difshow; else dontshoe">learningngfor</h1>
+<ng-template #dontshoe>
+  <h1>fuck you</h1>
+</ng-template>
+<ng-template #difshow>
+  <ng-container >
+    <table class="table">
+      <thead>
+        <tr>
+         
+          <th scope="col" *ngFor = "let car of cards ; let i= index ">{{cards[i].id}}</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          
+          <td *ngFor = "let car of cards ; let i= index ">{{cards[i].email}}</td>
+         
+        </tr>
+        <tr>
+         
+          <td *ngFor = "let car of cards ; let i= index ">{{cards[i].name}}</td>
+         
+        </tr>
+        <tr>
+          
+          <td *ngFor = "let car of cards ; let i= index ">{{cards[i].photo}}</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </ng-container>
+</ng-template>
+
+<div *ngFor="let button of buttons; index as i">
+  <button [ngClass]=" 'button.class '">{{ button.color }}</button>
+  <br />
+</div> -->
+
+
+<!-- <form>
+  <div class="form-group">
+    
+    <input type="number" class="form-control" id="exampleInputEmail1"  [(ngModel)]="num1" name="num1">
+    
+  </div>
+  <div class="form-group">
+    
+    <input type="number" class="form-control" id="exampleInputPassword1" [(ngModel)]="num2" name="num2">
+  </div>
+  <div class="form-group">
+    
+    <input type="text" class="form-control" id="symbol" [(ngModel)] = "symbol" name="symbol">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="domath()">Submit</button>
+
+
+  <div>
+    <input type="number" placeholder="{{result}}"  name="result"/>
+  </div>
+</form> -->
+
+<!-- <div>
+  <h1 [ngClass]="{'text-primary' : isActive , 'text-danger' : !isActive}">kiran kumar reddy</h1>
+  <button (click)="changeclass()">click me</button>
+</div> -->
+<div>
+  <h2 [ngStyle]="{'background-color': backGroundColor, 'color': textcolor}">kkkk</h2>
+  <h1 >please harder</h1>
+  <button (click) = "changestyle()">me</button>
+</div>
